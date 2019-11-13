@@ -98,6 +98,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Navicatv15.ico" />
+    <None Include="Resources\DataModelerv3.ico" />
     <None Include="Resources\DataModeler.ico" />
     <None Include="Resources\NP_x64.exe" />
     <None Include="Resources\NP_x32.exe" />

@@ -73,6 +73,16 @@ namespace Navicat_Keygen_Patch_By_DFoX.Properties {
         /// <summary>
         ///   Cerca una risorsa localizzata di tipo System.Drawing.Icon simile a (Icona).
         /// </summary>
+        internal static System.Drawing.Icon DataModelerv3 {
+            get {
+                object obj = ResourceManager.GetObject("DataModelerv3", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Icon simile a (Icona).
+        /// </summary>
         internal static System.Drawing.Icon Essentials {
             get {
                 object obj = ResourceManager.GetObject("Essentials", resourceCulture);
@@ -126,6 +136,16 @@ namespace Navicat_Keygen_Patch_By_DFoX.Properties {
         internal static System.Drawing.Icon Navicat {
             get {
                 object obj = ResourceManager.GetObject("Navicat", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Icon simile a (Icona).
+        /// </summary>
+        internal static System.Drawing.Icon Navicatv15 {
+            get {
+                object obj = ResourceManager.GetObject("Navicatv15", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

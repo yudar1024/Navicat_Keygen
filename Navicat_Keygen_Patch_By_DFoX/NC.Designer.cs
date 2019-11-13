@@ -31,15 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.trequestcode = new System.Windows.Forms.TextBox();
             this.bexit = new System.Windows.Forms.Button();
-            this.rn11 = new System.Windows.Forms.RadioButton();
-            this.rn12 = new System.Windows.Forms.RadioButton();
             this.tactivationcode = new System.Windows.Forms.TextBox();
             this.bgenerateactivation = new System.Windows.Forms.Button();
             this.g1 = new System.Windows.Forms.GroupBox();
-            this.repo = new System.Windows.Forms.RadioButton();
-            this.resse12 = new System.Windows.Forms.RadioButton();
-            this.resse11 = new System.Windows.Forms.RadioButton();
-            this.rmod = new System.Windows.Forms.RadioButton();
+            this.comboSw = new System.Windows.Forms.ComboBox();
             this.patchhost = new System.Windows.Forms.CheckBox();
             this.bPatch = new System.Windows.Forms.Button();
             this.controlloBackup = new System.Windows.Forms.CheckBox();
@@ -116,30 +111,6 @@
             this.bexit.UseVisualStyleBackColor = true;
             this.bexit.Click += new System.EventHandler(this.bexit_Click);
             // 
-            // rn11
-            // 
-            this.rn11.AutoSize = true;
-            this.rn11.Location = new System.Drawing.Point(225, 18);
-            this.rn11.Name = "rn11";
-            this.rn11.Size = new System.Drawing.Size(94, 17);
-            this.rn11.TabIndex = 2;
-            this.rn11.Text = "Navicat v11";
-            this.rn11.UseVisualStyleBackColor = true;
-            this.rn11.CheckedChanged += new System.EventHandler(this.rn11_CheckedChanged);
-            // 
-            // rn12
-            // 
-            this.rn12.AutoSize = true;
-            this.rn12.Checked = true;
-            this.rn12.Location = new System.Drawing.Point(379, 18);
-            this.rn12.Name = "rn12";
-            this.rn12.Size = new System.Drawing.Size(94, 17);
-            this.rn12.TabIndex = 3;
-            this.rn12.TabStop = true;
-            this.rn12.Text = "Navicat v12";
-            this.rn12.UseVisualStyleBackColor = true;
-            this.rn12.CheckedChanged += new System.EventHandler(this.rn11_CheckedChanged);
-            // 
             // tactivationcode
             // 
             this.tactivationcode.BackColor = System.Drawing.SystemColors.Info;
@@ -167,66 +138,32 @@
             // 
             // g1
             // 
-            this.g1.Controls.Add(this.repo);
-            this.g1.Controls.Add(this.resse12);
-            this.g1.Controls.Add(this.resse11);
-            this.g1.Controls.Add(this.rmod);
+            this.g1.Controls.Add(this.comboSw);
             this.g1.Controls.Add(this.patchhost);
             this.g1.Controls.Add(this.bPatch);
             this.g1.Controls.Add(this.controlloBackup);
-            this.g1.Controls.Add(this.rn11);
-            this.g1.Controls.Add(this.rn12);
             this.g1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.g1.ForeColor = System.Drawing.Color.DarkMagenta;
             this.g1.Location = new System.Drawing.Point(5, 13);
             this.g1.Name = "g1";
-            this.g1.Size = new System.Drawing.Size(568, 65);
+            this.g1.Size = new System.Drawing.Size(568, 44);
             this.g1.TabIndex = 6;
             this.g1.TabStop = false;
             this.g1.Text = "1) Patch";
             // 
-            // repo
+            // comboSw
             // 
-            this.repo.AutoSize = true;
-            this.repo.Location = new System.Drawing.Point(379, 40);
-            this.repo.Name = "repo";
-            this.repo.Size = new System.Drawing.Size(105, 17);
-            this.repo.TabIndex = 28;
-            this.repo.Text = "Report Viewer";
-            this.repo.UseVisualStyleBackColor = true;
-            this.repo.CheckedChanged += new System.EventHandler(this.rn11_CheckedChanged);
-            // 
-            // resse12
-            // 
-            this.resse12.AutoSize = true;
-            this.resse12.Location = new System.Drawing.Point(225, 38);
-            this.resse12.Name = "resse12";
-            this.resse12.Size = new System.Drawing.Size(107, 17);
-            this.resse12.TabIndex = 27;
-            this.resse12.Text = "Essentials v12";
-            this.resse12.UseVisualStyleBackColor = true;
-            // 
-            // resse11
-            // 
-            this.resse11.AutoSize = true;
-            this.resse11.Location = new System.Drawing.Point(81, 40);
-            this.resse11.Name = "resse11";
-            this.resse11.Size = new System.Drawing.Size(107, 17);
-            this.resse11.TabIndex = 26;
-            this.resse11.Text = "Essentials v11";
-            this.resse11.UseVisualStyleBackColor = true;
-            this.resse11.CheckedChanged += new System.EventHandler(this.rn11_CheckedChanged);
-            // 
-            // rmod
-            // 
-            this.rmod.AutoSize = true;
-            this.rmod.Location = new System.Drawing.Point(81, 18);
-            this.rmod.Name = "rmod";
-            this.rmod.Size = new System.Drawing.Size(88, 17);
-            this.rmod.TabIndex = 25;
-            this.rmod.Text = "Modeler v3";
-            this.rmod.UseVisualStyleBackColor = true;
-            this.rmod.CheckedChanged += new System.EventHandler(this.rn11_CheckedChanged);
+            this.comboSw.BackColor = System.Drawing.SystemColors.Info;
+            this.comboSw.ForeColor = System.Drawing.Color.DarkGreen;
+            this.comboSw.FormattingEnabled = true;
+            this.comboSw.Location = new System.Drawing.Point(237, 19);
+            this.comboSw.Name = "comboSw";
+            this.comboSw.Size = new System.Drawing.Size(153, 21);
+            this.comboSw.Sorted = true;
+            this.comboSw.TabIndex = 81;
+            this.comboSw.Text = "Software";
+            this.comboSw.SelectedIndexChanged += new System.EventHandler(this.comboSw_SelectedIndexChanged);
+            this.comboSw.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboCustom_KeyPress);
             // 
             // patchhost
             // 
@@ -235,7 +172,7 @@
             this.patchhost.CheckState = System.Windows.Forms.CheckState.Checked;
             this.patchhost.Cursor = System.Windows.Forms.Cursors.Hand;
             this.patchhost.ForeColor = System.Drawing.Color.Teal;
-            this.patchhost.Location = new System.Drawing.Point(6, 41);
+            this.patchhost.Location = new System.Drawing.Point(102, 23);
             this.patchhost.Name = "patchhost";
             this.patchhost.Size = new System.Drawing.Size(52, 17);
             this.patchhost.TabIndex = 24;
@@ -245,7 +182,7 @@
             // bPatch
             // 
             this.bPatch.ForeColor = System.Drawing.Color.DarkBlue;
-            this.bPatch.Location = new System.Drawing.Point(490, 15);
+            this.bPatch.Location = new System.Drawing.Point(487, 17);
             this.bPatch.Name = "bPatch";
             this.bPatch.Size = new System.Drawing.Size(71, 23);
             this.bPatch.TabIndex = 22;
@@ -260,7 +197,7 @@
             this.controlloBackup.CheckState = System.Windows.Forms.CheckState.Checked;
             this.controlloBackup.Cursor = System.Windows.Forms.Cursors.Hand;
             this.controlloBackup.ForeColor = System.Drawing.Color.Teal;
-            this.controlloBackup.Location = new System.Drawing.Point(6, 19);
+            this.controlloBackup.Location = new System.Drawing.Point(6, 23);
             this.controlloBackup.Name = "controlloBackup";
             this.controlloBackup.Size = new System.Drawing.Size(69, 17);
             this.controlloBackup.TabIndex = 23;
@@ -286,7 +223,7 @@
             this.linkue.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkue.ForeColor = System.Drawing.Color.DarkRed;
             this.linkue.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.linkue.Location = new System.Drawing.Point(446, 564);
+            this.linkue.Location = new System.Drawing.Point(449, 543);
             this.linkue.Name = "linkue";
             this.linkue.Size = new System.Drawing.Size(120, 13);
             this.linkue.TabIndex = 25;
@@ -307,7 +244,7 @@
             this.g2.Controls.Add(this.redu);
             this.g2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.g2.ForeColor = System.Drawing.Color.Crimson;
-            this.g2.Location = new System.Drawing.Point(5, 84);
+            this.g2.Location = new System.Drawing.Point(5, 63);
             this.g2.Name = "g2";
             this.g2.Size = new System.Drawing.Size(568, 75);
             this.g2.TabIndex = 27;
@@ -433,7 +370,7 @@
             this.g3.Controls.Add(this.rnfr30);
             this.g3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.g3.ForeColor = System.Drawing.Color.Crimson;
-            this.g3.Location = new System.Drawing.Point(5, 165);
+            this.g3.Location = new System.Drawing.Point(5, 144);
             this.g3.Name = "g3";
             this.g3.Size = new System.Drawing.Size(568, 95);
             this.g3.TabIndex = 74;
@@ -566,7 +503,7 @@
             this.g4.Controls.Add(this.tactivationcode);
             this.g4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.g4.ForeColor = System.Drawing.Color.Teal;
-            this.g4.Location = new System.Drawing.Point(5, 266);
+            this.g4.Location = new System.Drawing.Point(5, 245);
             this.g4.Name = "g4";
             this.g4.Size = new System.Drawing.Size(568, 295);
             this.g4.TabIndex = 75;
@@ -773,7 +710,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.Indigo;
-            this.linkLabel1.Location = new System.Drawing.Point(8, 564);
+            this.linkLabel1.Location = new System.Drawing.Point(11, 543);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(77, 13);
             this.linkLabel1.TabIndex = 76;
@@ -784,7 +721,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Navicat_Keygen_Patch_By_DFoX.Properties.Resources.ita;
-            this.pictureBox2.Location = new System.Drawing.Point(286, 564);
+            this.pictureBox2.Location = new System.Drawing.Point(289, 543);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 16);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -796,7 +733,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 582);
+            this.ClientSize = new System.Drawing.Size(578, 563);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.g4);
@@ -804,9 +741,8 @@
             this.Controls.Add(this.g2);
             this.Controls.Add(this.linkue);
             this.Controls.Add(this.g1);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(594, 621);
-            this.MinimumSize = new System.Drawing.Size(594, 621);
+            this.MaximumSize = new System.Drawing.Size(594, 602);
+            this.MinimumSize = new System.Drawing.Size(594, 602);
             this.Name = "FNavicat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Navicat Products - Patch/Keygen v{0}.{1}";
@@ -830,8 +766,6 @@
 
         private System.Windows.Forms.TextBox trequestcode;
         private System.Windows.Forms.Button bexit;
-        private System.Windows.Forms.RadioButton rn11;
-        private System.Windows.Forms.RadioButton rn12;
         private System.Windows.Forms.TextBox tactivationcode;
         private System.Windows.Forms.Button bgenerateactivation;
         private System.Windows.Forms.GroupBox g1;
@@ -875,15 +809,12 @@
         private System.Windows.Forms.CheckBox patchhost;
         private System.Windows.Forms.CheckBox cMac;
         private System.Windows.Forms.Button bcopyrc;
-        private System.Windows.Forms.RadioButton rmod;
-        private System.Windows.Forms.RadioButton resse11;
-        private System.Windows.Forms.RadioButton resse12;
-        private System.Windows.Forms.RadioButton repo;
         private System.Windows.Forms.CheckBox cautoi;
         private System.Windows.Forms.ComboBox combolang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox clin;
+        private System.Windows.Forms.ComboBox comboSw;
     }
 }
 
